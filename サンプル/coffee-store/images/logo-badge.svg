@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="niko cafe bar">
+  <defs>
+    <path id="arc-top" d="M 24,80 A 56,56 0 0 1 136,80"/>
+    <path id="arc-bottom" d="M 32,80 A 48,48 0 0 0 128,80"/>
+  </defs>
+
+  <circle cx="80" cy="80" r="79" fill="#43240f"/>
+  <circle cx="80" cy="80" r="70" fill="#f4ece0"/>
+  <circle cx="80" cy="80" r="63.5" fill="none" stroke="#43240f" stroke-width="1.4"/>
+
+  <g fill="#43240f" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+    <text font-size="14.5" letter-spacing="1.6"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">NIKO CAFE BAR</textPath></text>
+    <text font-size="8" letter-spacing="2.4"><textPath href="#arc-bottom" startOffset="50%" text-anchor="middle">COFFEE &amp; BAR</textPath></text>
+  </g>
+
+  <!-- 左右の飾りドット -->
+  <g fill="#43240f">
+    <circle cx="24.5" cy="80" r="2"/>
+    <circle cx="135.5" cy="80" r="2"/>
+  </g>
+
+  <circle cx="80" cy="80" r="28" fill="#ffffff"/>
+
+  <!-- ニコッと笑うカップ -->
+  <g fill="none" stroke="#43240f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M69 63c-1.6 2.4-1.6 4.4 0 6.8"/>
+    <path d="M80 61c-1.6 2.4-1.6 4.4 0 6.8"/>
+    <path d="M64 74h30v7a15 15 0 0 1-30 0z"/>
+    <path d="M94 77h3.5a5.5 5.5 0 0 1 0 11H96"/>
+    <path d="M72 80.5c2.6 3.4 10.4 3.4 13 0"/>
+    <path d="M60 96h38"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# バックアップ・一時ファイル
+*.bak
+*.bak-*
+*.tmp
+~$*

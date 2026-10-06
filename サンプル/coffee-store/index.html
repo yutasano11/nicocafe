@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>niko cafe bar | 庭とアンティークの小さなカフェバー</title>
+<meta name="description" content="niko cafe bar(ニコ カフェ バー)は、庭とアンティークに囲まれた小さなカフェバーです。自家焙煎コーヒーと手作りのスイーツ、夜はカクテルもお楽しみいただけます。">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Shippori+Mincho:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <a class="logo-badge" href="index.html"><img src="images/logo-badge.svg" alt="niko cafe bar" width="152" height="152"></a>
+
+  <div class="utility-bar">
+    <div class="header-wrap">
+      <p class="utility-welcome">庭とアンティークに囲まれた、小さなカフェバーです。</p>
+      <ul class="utility-links">
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="access.html">営業時間・アクセス</a></li>
+        <li><a class="is-boxed" href="#instagram">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="search-bar">
+    <div class="header-wrap">
+      <form class="site-search" id="siteSearch" role="search">
+        <input type="search" name="q" placeholder="メニューを検索（例: ロールケーキ）" aria-label="メニューを検索">
+        <button type="submit" aria-label="検索する">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+        </button>
+      </form>
+      <a class="reserve-box" href="access.html#contact">
+        <span class="reserve-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13a3 3 0 0 1 3 3 5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M20 9h1a2.5 2.5 0 0 1 0 5h-1"/><path d="M3 20h16"/><path d="M8 3.5c-.8 1-.8 2 0 3M12 2.5c-.8 1-.8 2 0 3"/></svg>
+        </span>
+        <span class="reserve-text">
+          <strong>ご予約・お問い合わせ</strong>
+          <small>TEL 00-0000-0000</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="main-nav" aria-label="メインナビゲーション">
+    <div class="header-wrap">
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="menu.html#coffee">Coffee</a></li>
+        <li><a href="menu.html#sweets">Sweets</a></li>
+        <li><a href="menu.html#bar">Bar Time</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="access.html">Access</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <div class="container">
+    <section class="slider" id="heroSlider" aria-label="お店の紹介スライド">
+      <div class="slider-viewport">
+        <article class="slide is-active">
+          <img src="images/hero-bg.jpg" alt="窓辺の灯りとアンティークの飾られた店内" loading="eager">
+          <div class="slide-caption">
+            <p class="slide-eyebrow">Garden &amp; Antique</p>
+            <h2 class="slide-title"><span>庭のある、</span><span>小さなカフェバー</span></h2>
+            <p class="slide-text">自家焙煎のコーヒーと手作りのスイーツ。アンティークに囲まれた部屋で、ゆっくりとした時間をどうぞ。</p>
+            <a class="btn btn-small" href="about.html">お店について</a>
+          </div>
+        </article>
+        <article class="slide" aria-hidden="true">
+          <img src="images/menu-hero-chestnut.jpg" alt="季節の栗を使った手作りスイーツ" loading="lazy">
+          <div class="slide-caption">
+            <p class="slide-eyebrow">Seasonal Sweets</p>
+            <h2 class="slide-title"><span>季節の</span><span>手作りスイーツ</span></h2>
+            <p class="slide-text">ロールケーキもパフェも仕込みから手作業で。季節ごとに少しずつ表情を変えます。</p>
+            <a class="btn btn-small" href="menu.html#sweets">スイーツを見る</a>
+          </div>
+        </article>
+        <article class="slide" aria-hidden="true">
+          <img src="images/about-bar.jpg" alt="夜のバータイムに並ぶカクテル" loading="lazy">
+          <div class="slide-caption">
+            <p class="slide-eyebrow">Night Bar Time</p>
+            <h2 class="slide-title"><span>夜は、</span><span>カクテルを一杯</span></h2>
+            <p class="slide-text">日が暮れたら小さなバーに。その日の果物を使ったオリジナルカクテルをご用意しています。</p>
+            <a class="btn btn-small" href="menu.html#bar">バーメニュー</a>
+          </div>
+        </article>
+      </div>
+
+      <button class="slider-arrow prev" type="button" data-slide-step="-1" aria-label="前のスライド">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button class="slider-arrow next" type="button" data-slide-step="1" aria-label="次のスライド">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="slider-dots" role="tablist" aria-label="スライドの切り替え">
+        <button type="button" class="is-active" role="tab" aria-selected="true" aria-label="スライド1を表示"></button>
+        <button type="button" role="tab" aria-selected="false" aria-label="スライド2を表示"></button>
+        <button type="button" role="tab" aria-selected="false" aria-label="スライド3を表示"></button>
+      </div>
+    </section>
+
+    <section class="banner-grid" aria-label="お店の見どころ">
+      <a class="banner-card" href="about.html">
+        <img src="images/concept-interior.jpg" alt="唐草模様の壁紙とアンティークのカトラリーフックが並ぶ店内" loading="lazy">
+        <div class="banner-body">
+          <p class="banner-sub">Enjoying great</p>
+          <p class="banner-title">アンティークの空間</p>
+        </div>
+      </a>
+      <a class="banner-card" href="menu.html#coffee">
+        <img src="images/menu-coffee.jpg" alt="ハンドドリップで淹れた自家焙煎コーヒー" loading="lazy">
+        <div class="banner-body">
+          <p class="banner-sub">The pursuit of the</p>
+          <p class="banner-title">自家焙煎コーヒー</p>
+        </div>
+      </a>
+      <a class="banner-card" href="about.html#garden">
+        <img src="images/access-garden.jpg" alt="夜にライトアップされた庭の紅葉" loading="lazy">
+        <div class="banner-body">
+          <p class="banner-sub">Relax in our</p>
+          <p class="banner-title">庭を眺めるひととき</p>
+        </div>
+      </a>
+    </section>
+  </div>
+
+  <section class="info-strip is-spaced">
+    <div class="container">
+      <div class="info-strip-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div>
+          <h3>Open</h3>
+          <p>11:00〜18:00（夜のバータイムは要確認）</p>
+        </div>
+      </div>
+      <div class="info-strip-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <div>
+          <h3>Closed</h3>
+          <p>不定休（営業日はInstagramでお知らせ）</p>
+        </div>
+      </div>
+      <div class="info-strip-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div>
+          <h3>Access</h3>
+          <p>○○線 ○○駅 徒歩5分</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container split reveal">
+      <div class="split-text">
+        <span class="eyebrow">About us</span>
+        <h2 class="section-title">古いものに、灯りをともす。</h2>
+        <p>旅先で買い集めたアンティークの額縁や食器、真鍮のランプ。時間の重みがあるものたちに囲まれて、庭を眺めながら過ごす時間を大切にしています。</p>
+        <p>コーヒーは自家焙煎の豆を一杯ずつ。スイーツも手作りで、季節ごとに少しずつ表情を変えます。</p>
+        <a href="about.html" class="link-more">続きを読む →</a>
+      </div>
+      <figure class="photo-frame">
+        <img src="images/about-story.jpg" alt="唐草模様の壁紙に飾られたアンティークの額縁と営業日カレンダー" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Best seller</span>
+        <h2 class="section-title">人気のメニュー</h2>
+        <p class="section-lead">価格はすべて税込の参考価格です（確定次第更新いたします）。</p>
+      </div>
+      <div class="product-grid reveal">
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="images/menu-coffee.jpg" alt="自家焙煎ブレンド" loading="lazy">
+            <span class="product-badge">看板</span>
+          </div>
+          <div class="product-body">
+            <p class="product-cat">Coffee</p>
+            <h3 class="product-name">自家焙煎ブレンド</h3>
+            <p class="product-price">¥600</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="images/menu-rollcake.jpg" alt="季節のロールケーキ" loading="lazy">
+            <span class="product-badge">人気</span>
+          </div>
+          <div class="product-body">
+            <p class="product-cat">Sweets</p>
+            <h3 class="product-name">季節のロールケーキ</h3>
+            <p class="product-price">¥750</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="images/menu-parfait.jpg" alt="コーヒーゼリーパフェ" loading="lazy">
+            <span class="product-badge">人気</span>
+          </div>
+          <div class="product-body">
+            <p class="product-cat">Sweets</p>
+            <h3 class="product-name">コーヒーゼリーパフェ</h3>
+            <p class="product-price">¥850</p>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-thumb">
+            <img src="images/about-bar.jpg" alt="季節のフルーツカクテル" loading="lazy">
+          </div>
+          <div class="product-body">
+            <p class="product-cat">Bar</p>
+            <h3 class="product-name">季節のフルーツカクテル</h3>
+            <p class="product-price">¥900</p>
+          </div>
+        </article>
+      </div>
+      <p class="text-center mt-lg"><a href="menu.html" class="btn btn-outline">メニューをすべて見る</a></p>
+    </div>
+  </section>
+
+  <section class="promo reveal">
+    <div class="container">
+      <h2>ゆったりとした時間を、niko cafe barで。</h2>
+      <p>昼はコーヒーとスイーツを、夜はカクテルを。ご予約はお電話またはフォームから承っております。</p>
+      <a href="access.html#contact" class="btn">ご予約はこちら</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container text-center reveal">
+      <span class="eyebrow">Reviews</span>
+      <h2 class="section-title">お客様の声</h2>
+      <p class="rating">★★★★★ 4.8 / 5</p>
+      <div class="review-grid">
+        <div class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-quote">「庭を眺めながら飲むコーヒーが最高でした。アンティークの雰囲気にも癒されます。」</p>
+          <span class="review-name">— お客様 A</span>
+        </div>
+        <div class="review-card">
+          <p class="review-stars">★★★★★</p>
+          <p class="review-quote">「夜のバータイムでカクテルをいただきました。落ち着いた雰囲気でゆっくり過ごせます。」</p>
+          <span class="review-name">— お客様 B</span>
+        </div>
+        <div class="review-card">
+          <p class="review-stars">★★★★☆</p>
+          <p class="review-quote">「ロールケーキが絶品でした。また季節を変えて訪れたいです。」</p>
+          <span class="review-name">— お客様 C</span>
+        </div>
+      </div>
+      <p class="form-note mt-lg">※お客様の声はサンプルです。実際のレビューに差し替えてください。</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="instagram">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Instagram</span>
+        <h2 class="section-title">最新情報をチェック</h2>
+      </div>
+      <p class="insta-handle reveal">Follow us <strong>@niko.cafe.bar</strong></p>
+      <div class="insta-grid reveal">
+        <img src="images/menu-coffee.jpg" alt="自家焙煎コーヒー" loading="lazy">
+        <img src="images/menu-rollcake.jpg" alt="季節のロールケーキ" loading="lazy">
+        <img src="images/about-flowers.jpg" alt="花とフルーツの静物" loading="lazy">
+        <img src="images/menu-parfait.jpg" alt="コーヒーゼリーパフェ" loading="lazy">
+        <img src="images/about-bar.jpg" alt="夜のカクテル" loading="lazy">
+        <img src="images/concept-interior.jpg" alt="店内の様子" loading="lazy">
+        <img src="images/access-garden.jpg" alt="夜の庭" loading="lazy">
+        <img src="images/about-signboard.jpg" alt="入口の看板" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">
+        <img class="footer-logo-img" src="images/logo-badge.svg" alt="" width="58" height="58">
+        <div class="footer-logo">niko cafe bar<small>Coffee &amp; Bar</small></div>
+      </div>
+      <p class="footer-text">庭とアンティークに囲まれた、小さなカフェバー。自家焙煎コーヒーと手作りのスイーツをどうぞ。</p>
+      <ul class="sns-list">
+        <li><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a></li>
+        <li><a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg></a></li>
+      </ul>
+    </div>
+    <nav aria-label="メニュー">
+      <h2 class="footer-title">Menu</h2>
+      <ul class="footer-list">
+        <li><a href="menu.html#coffee">コーヒー・ドリンク</a></li>
+        <li><a href="menu.html#sweets">スイーツ</a></li>
+        <li><a href="menu.html#food">トースト・軽食</a></li>
+        <li><a href="menu.html#bar">バータイム</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="インフォメーション">
+      <h2 class="footer-title">Information</h2>
+      <ul class="footer-list">
+        <li><a href="about.html">お店について</a></li>
+        <li><a href="access.html">営業時間・アクセス</a></li>
+        <li><a href="access.html#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="footer-title">Shop info</h2>
+      <address class="footer-address">
+        〒000-0000<br>東京都○○区○○1-2-3<br>TEL 00-0000-0000<br>OPEN 11:00〜18:00 / 不定休
+      </address>
+    </div>
+  </div>
+  <p class="copyright">&copy; 2026 niko cafe bar</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
