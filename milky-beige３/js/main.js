@@ -46,12 +46,17 @@
   });
 
   // ---- commitment panels: + opens the detail text ----
-  document.querySelectorAll(".panel-plus").forEach((btn) => {
+  const panelButtons = document.querySelectorAll(".panel-plus");
+  const setPanel = (btn, open) => {
+    btn.closest(".panel").classList.toggle("is-open", open);
+    btn.setAttribute("aria-expanded", String(open));
+    btn.setAttribute("aria-label", open ? "閉じる" : "こだわりを読む");
+  };
+  panelButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const panel = btn.closest(".panel");
-      const isOpen = panel.classList.toggle("is-open");
-      btn.setAttribute("aria-expanded", String(isOpen));
-      btn.setAttribute("aria-label", isOpen ? "閉じる" : "こだわりを読む");
+      const open = !btn.closest(".panel").classList.contains("is-open");
+      // opening one closes the others (they slide back down)
+      panelButtons.forEach((other) => setPanel(other, other === btn ? open : false));
     });
   });
 
