@@ -118,14 +118,27 @@ h1, h2, h3, h4 { font-family: var(--font-jp); font-weight: 500; letter-spacing: 
 .hero-sub { margin: 16px auto 0; max-width: 40ch; font-size: 0.95rem; color: var(--color-ink-soft); }
 .hero-float { position: absolute; z-index: 1; animation: blob-float 7s ease-in-out infinite; }
 .hero-float .blob { width: 100%; height: 100%; }
-.hero-float.f-right { top: 0; bottom: 0; right: 7%; width: clamp(220px, 26vw, 380px); animation: none; }
-@media (min-width: 781px) {
-  .hero { padding-right: calc(clamp(220px, 26vw, 380px) + 7% + 24px); }
+/* melting chocolate drip */
+.goo-defs { position: absolute; }
+.choco-drip { position: absolute; top: 0; left: -20px; right: -20px; height: 200px; z-index: 1; filter: url(#goo); pointer-events: none; --choco: #4a2b1c; }
+.choco-band { position: absolute; top: -20px; left: 0; right: 0; height: 52px; background: var(--choco); }
+.drip { position: absolute; top: 20px; width: 26px; margin-left: -13px; height: var(--h); background: var(--choco); border-radius: 0 0 13px 13px; transform-origin: top center; animation: choco-melt 9s ease-in-out var(--d) infinite; }
+.drip::after { content: ""; position: absolute; left: 50%; bottom: 2px; width: 16px; height: 18px; margin-left: -8px; background: var(--choco); border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; animation: choco-drop 9s ease-in var(--d) infinite; }
+@keyframes choco-melt {
+  0%, 100% { transform: scaleY(0.35); }
+  55% { transform: scaleY(1); }
+  70% { transform: scaleY(0.9); }
 }
-.hero-float.f-right .blob { animation: none; border-radius: 0 0 999px 999px; }
+@keyframes choco-drop {
+  0%, 55% { transform: translateY(0); opacity: 1; }
+  80% { transform: translateY(70px); opacity: 1; }
+  81%, 100% { transform: translateY(0); opacity: 0; }
+}
 @media (max-width: 780px) {
-  .hero-float.f-right { bottom: auto; right: 5%; width: 110px; height: 190px; }
+  .choco-drip { height: 150px; }
+  .drip { width: 20px; margin-left: -10px; height: calc(var(--h) * 0.7); }
 }
+@media (prefers-reduced-motion: reduce) { .drip, .drip::after { animation: none; } }
 .hero-nav { position: relative; z-index: 2; margin-top: 44px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .hero-nav a { font-family: var(--font-en); font-weight: 500; font-size: 0.74rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 11px 22px; border-radius: 2px; border: 1px solid var(--color-espresso); background: transparent; color: var(--color-espresso); transition: background-color 0.25s ease, color 0.25s ease; }
 .hero-nav a:hover { background: var(--color-espresso); color: var(--color-milk); }
