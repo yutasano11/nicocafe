@@ -118,10 +118,10 @@ h1, h2, h3, h4 { font-family: var(--font-jp); font-weight: 500; letter-spacing: 
 .hero-sub { margin: 16px auto 0; max-width: 40ch; font-size: 0.95rem; color: var(--color-ink-soft); }
 .hero-float { position: absolute; z-index: 1; animation: blob-float 7s ease-in-out infinite; }
 .hero-float .blob { width: 100%; height: 100%; }
-@keyframes slow-spin { to { transform: rotate(360deg); } }
-.hero-float.f-right { width: clamp(260px, 32vw, 460px); aspect-ratio: 1; top: 50%; right: calc(clamp(260px, 32vw, 460px) / -4); margin-top: calc(clamp(260px, 32vw, 460px) / -2); animation: slow-spin 60s linear infinite; }
+.hero-float.f-right { top: 0; right: 7%; width: clamp(220px, 26vw, 380px); height: 78%; animation: none; }
+.hero-float.f-right .blob { animation: none; border-radius: 0 0 999px 999px; }
 @media (max-width: 780px) {
-  .hero-float.f-right { width: 150px; margin-top: 0; top: 4%; right: -40px; }
+  .hero-float.f-right { right: 5%; width: 110px; height: 190px; }
 }
 .hero-nav { position: relative; z-index: 2; margin-top: 44px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .hero-nav a { font-family: var(--font-en); font-weight: 500; font-size: 0.74rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 11px 22px; border-radius: 2px; border: 1px solid var(--color-espresso); background: transparent; color: var(--color-espresso); transition: background-color 0.25s ease, color 0.25s ease; }
