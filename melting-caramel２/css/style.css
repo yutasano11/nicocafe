@@ -298,8 +298,10 @@ address { font-size: 0.88rem; color: var(--color-ink-soft); }
 @media (prefers-reduced-motion: reduce) { .map-hint { animation: none; } }
 @media (max-width: 480px) { .map-hint { top: 10px; right: 10px; font-size: 0.64rem; padding: 6px 11px 6px 8px; } .map-hint svg { width: 13px; height: 13px; } }
 .origin-map { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(1) saturate(2.2) hue-rotate(-14deg) brightness(0.96) contrast(0.94); }
-.origin-pin { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 12px; z-index: 2; transition: transform 0.2s ease; }
-.origin-pin:hover { transform: translate(-50%, -50%) scale(1.08); }
+.origin-pin { position: absolute; transform: translate(-50%, -5px); display: flex; flex-direction: column; align-items: center; gap: 12px; z-index: 2; transition: transform 0.2s ease; }
+.origin-pin:hover { transform: translate(-50%, -5px) scale(1.08); }
+.origin-pin.is-label-top { flex-direction: column-reverse; transform: translate(-50%, calc(-100% + 5px)); }
+.origin-pin.is-label-top:hover { transform: translate(-50%, calc(-100% + 5px)) scale(1.08); }
 .origin-pin:hover .origin-pin-label { color: var(--color-white); background: var(--color-indigo); }
 .origin-pin:hover .origin-pin-dot { background: var(--color-white); box-shadow: 0 0 0 4px var(--color-indigo); }
 .origin-pin-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-indigo); box-shadow: 0 0 0 4px rgba(60, 36, 21, 0.16); flex-shrink: 0; }

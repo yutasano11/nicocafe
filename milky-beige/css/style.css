@@ -202,7 +202,8 @@ h1, h2, h3, h4 { font-family: var(--font-jp); font-weight: 500; letter-spacing: 
 /* ---------- coffee origin map ---------- */
 .origin-map-wrap { position: relative; max-width: 640px; margin: 40px auto 0; aspect-ratio: 2 / 1; background: var(--color-latte-soft); border-radius: var(--radius-lg); overflow: hidden; }
 .origin-map { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: sepia(1) saturate(1.7) hue-rotate(-12deg) brightness(0.97); opacity: 0.9; }
-.origin-pin { position: absolute; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; gap: 10px; z-index: 2; }
+.origin-pin { position: absolute; transform: translate(-50%, -5px); display: flex; flex-direction: column; align-items: center; gap: 10px; z-index: 2; }
+.origin-pin.is-label-top { flex-direction: column-reverse; transform: translate(-50%, calc(-100% + 5px)); }
 .origin-pin-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-espresso); box-shadow: 0 0 0 4px rgba(59, 38, 24, 0.18); }
 .origin-pin-label { font-weight: 700; font-size: 0.66rem; color: var(--color-espresso); background: var(--color-white); padding: 3px 10px; border-radius: 999px; white-space: nowrap; box-shadow: var(--shadow-card); }
 .map-caption { text-align: center; margin-top: 14px; font-size: 0.8rem; color: var(--color-ink-soft); }
