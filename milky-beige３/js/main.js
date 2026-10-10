@@ -45,6 +45,16 @@
     link.addEventListener("click", () => activateTab(link.dataset.openTab));
   });
 
+  // ---- commitment panels: + opens the detail text ----
+  document.querySelectorAll(".panel-plus").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const panel = btn.closest(".panel");
+      const isOpen = panel.classList.toggle("is-open");
+      btn.setAttribute("aria-expanded", String(isOpen));
+      btn.setAttribute("aria-label", isOpen ? "閉じる" : "こだわりを読む");
+    });
+  });
+
   // ---- scroll reveal ----
   const revealTargets = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
