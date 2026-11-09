@@ -125,11 +125,6 @@ h1, h2, h3, h4 { font-family: var(--font-jp); font-weight: 700; color: var(--col
 .hero { position: relative; overflow: hidden; }
 
 /* hero photo trio + floating reserve tab (echoing the reference site's persistent side tab) */
-.trio-reserve-tab { position: absolute; z-index: 3; top: 50%; left: 20px; transform: translateY(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 18px 10px; border: 1px solid rgba(255, 255, 255, 0.65); border-radius: 999px; color: #fff; transition: background-color 0.25s ease, color 0.25s ease; }
-.trio-reserve-tab svg { width: 15px; height: 15px; flex-shrink: 0; }
-.trio-reserve-tab span { writing-mode: vertical-rl; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.16em; }
-.trio-panel:hover .trio-reserve-tab { background: var(--color-white); color: var(--color-indigo); }
-@media (max-width: 860px) { .trio-reserve-tab { display: none; } }
 
 /* ---------- section titles ---------- */
 .section { position: relative; padding: 92px 0 84px; }
