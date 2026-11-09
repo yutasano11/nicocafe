@@ -63,13 +63,13 @@
   // ---- commitment panels: + opens the detail text ----
   const panelButtons = document.querySelectorAll(".panel-plus");
   const setPanel = (btn, open) => {
-    btn.closest(".panel").classList.toggle("is-open", open);
+    btn.closest(".commit-card").classList.toggle("is-open", open);
     btn.setAttribute("aria-expanded", String(open));
     btn.setAttribute("aria-label", open ? "閉じる" : "こだわりを読む");
   };
   panelButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const open = !btn.closest(".panel").classList.contains("is-open");
+      const open = !btn.closest(".commit-card").classList.contains("is-open");
       // opening one closes the others (they slide back down)
       panelButtons.forEach((other) => setPanel(other, other === btn ? open : false));
     });
