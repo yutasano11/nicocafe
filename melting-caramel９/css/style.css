@@ -241,7 +241,7 @@ address { font-size: 0.88rem; color: var(--color-ink-soft); }
 @media (max-width: 860px) { .trio-panel { min-height: 400px; } }
 .trio-panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
 .trio-panel:hover img { transform: scale(1.06); }
-/* left hero panel: coffee photos crossfade slowly while hovered */
+/* hero panels: photos crossfade slowly while hovered */
 .trio-panel-cycle .cycle-slide { opacity: 0; transition: opacity 1.8s ease, transform 0.8s ease; }
 .trio-panel-cycle .cycle-slide.is-active { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .trio-panel-cycle .cycle-slide { transition: none; } }

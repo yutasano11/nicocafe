@@ -167,7 +167,7 @@
     window.addEventListener("pageshow", closeBubble);
   }
 
-  // Left hero panel: slowly crossfade through coffee photos while the cursor is over it
+  // Hero panels: slowly crossfade through each panel's photos while the cursor is over it
   document.querySelectorAll(".trio-panel-cycle").forEach((panel) => {
     const slides = Array.from(panel.querySelectorAll(".cycle-slide"));
     if (slides.length < 2) return;
