@@ -190,3 +190,18 @@
     });
   });
 })();
+
+/* Identity gallery: open a photo larger */
+(function () {
+  var box = document.getElementById('gallery-lightbox');
+  if (!box || typeof box.showModal !== 'function') return;
+  var img = box.querySelector('img'), cap = box.querySelector('figcaption');
+  document.querySelectorAll('.gallery-item').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      img.src = btn.dataset.full; img.alt = btn.dataset.caption; cap.textContent = btn.dataset.caption;
+      box.showModal();
+    });
+  });
+  box.querySelector('.gallery-close').addEventListener('click', function () { box.close(); });
+  box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+})();

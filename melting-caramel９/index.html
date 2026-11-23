@@ -449,33 +449,17 @@
         <h2 class="section-title">新しくなったniko caffe barの色とかたち</h2>
         <p class="section-lead">金の唐草模様の壁紙、真鍮のランプ、窓の外にひろがる小さな庭。ひとつひとつが、この店だけの時間をつくります。</p>
       </div>
-      <div class="motif-list reveal">
-        <div class="motif">
-          <span class="motif-thumb" style="--z:5;--o:10% 72%"><img src="images/about-story.jpg" alt="唐草模様の壁紙" loading="lazy"></span>
-          <span class="motif-name">唐草の壁紙</span>
-          <span class="motif-desc">灯りをやわらかく返す、金色の唐草模様。</span>
-        </div>
-        <div class="motif">
-          <span class="motif-thumb" style="--z:5;--o:41% 54%"><img src="images/about-story.jpg" alt="壁に掛けたアンティークのスプーンとフォーク" loading="lazy"></span>
-          <span class="motif-name">古いカトラリー</span>
-          <span class="motif-desc">壁のフックにも、使い込まれた匙とフォーク。</span>
-        </div>
-        <div class="motif">
-          <span class="motif-thumb" style="--z:1.6;--o:30% 40%"><img src="images/about-antique-goods.png" alt="棚に並ぶ古いコーヒーミル" loading="lazy"></span>
-          <span class="motif-name">コーヒーミル</span>
-          <span class="motif-desc">かつて誰かの朝を支えた、手まわしの道具。</span>
-        </div>
-        <div class="motif">
-          <span class="motif-thumb" style="--z:1.9;--o:24% 66%"><img src="images/brand-figurine.png" alt="コーヒー豆の上で眠るバリスタの人形" loading="lazy"></span>
-          <span class="motif-name">バリスタ人形</span>
-          <span class="motif-desc">コーヒー豆の上でひと休みする、小さな看板役。</span>
-        </div>
-      </div>
-      <div class="identity-strip reveal">
-        <figure class="photo-frame melt-frame"><img src="images/about-story.jpg" alt="唐草模様の壁紙に飾られたアンティークの額縁" loading="lazy"></figure>
-        <figure class="photo-frame"><img src="images/access-garden.jpg" alt="夜にライトアップされた庭の紅葉" loading="lazy"></figure>
-        <figure class="photo-frame"><img src="images/brand-board.jpg" alt="niko caffe barのロゴボード" loading="lazy"></figure>
-      </div>
+      <p class="gallery-label reveal">これまでの風景 <span>Gallery</span></p>
+      <ul class="gallery-grid reveal">
+        <li><button type="button" class="gallery-item" data-full="images/gallery-01.jpg" data-caption="庭を眺める席で、デザートとコーヒー"><img src="images/gallery-01.jpg" alt="庭を眺める席で、デザートとコーヒー" loading="lazy"></button></li>
+        <li><button type="button" class="gallery-item" data-full="images/gallery-02.jpg" data-caption="看板の下に並ぶ焼き菓子とケーキ"><img src="images/gallery-02.jpg" alt="看板の下に並ぶ焼き菓子とケーキ" loading="lazy"></button></li>
+        <li><button type="button" class="gallery-item" data-full="images/gallery-03.jpg" data-caption="フルーツをのせたパフェ"><img src="images/gallery-03.jpg" alt="フルーツをのせたパフェ" loading="lazy"></button></li>
+        <li><button type="button" class="gallery-item" data-full="images/gallery-04.jpg" data-caption="古いストーブのある店内"><img src="images/gallery-04.jpg" alt="古いストーブのある店内" loading="lazy"></button></li>
+        <li><button type="button" class="gallery-item" data-full="images/gallery-05.jpg" data-caption="デザートが並ぶカウンター"><img src="images/gallery-05.jpg" alt="デザートが並ぶカウンター" loading="lazy"></button></li>
+        <li><button type="button" class="gallery-item" data-full="images/gallery-06.jpg" data-caption="果物とドライフラワーで飾ったOPENの看板"><img src="images/gallery-06.jpg" alt="果物とドライフラワーで飾ったOPENの看板" loading="lazy"></button></li>
+        <li><button type="button" class="gallery-item" data-full="images/gallery-07.jpg" data-caption="窓から庭が見える席"><img src="images/gallery-07.jpg" alt="窓から庭が見える席" loading="lazy"></button></li>
+        <li><button type="button" class="gallery-item" data-full="images/gallery-08.jpg" data-caption="クリスマスのケーキスタンド"><img src="images/gallery-08.jpg" alt="クリスマスのケーキスタンド" loading="lazy"></button></li>
+      </ul>
     </div>
   </section>
 
@@ -610,6 +594,10 @@
   <p class="copyright">&copy; 2026 niko caffe bar</p>
 </footer>
 
+<dialog class="gallery-lightbox" id="gallery-lightbox">
+  <button type="button" class="gallery-close" aria-label="閉じる">×</button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+</dialog>
 <script src="js/main.js"></script>
 </body>
 </html>
