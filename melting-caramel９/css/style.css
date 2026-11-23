@@ -220,6 +220,9 @@ h1, h2, h3, h4 { font-family: var(--font-jp); font-weight: 700; color: var(--col
 .form-row input, .form-row textarea { width: 100%; padding: 13px 16px; border: 1px solid var(--color-silver-solid); border-radius: var(--radius-sm); background: var(--color-white); font-family: var(--font-body); font-size: 0.95rem; color: var(--color-ink); }
 .form-row input:focus, .form-row textarea:focus { outline: none; border-color: var(--color-navy); box-shadow: 0 0 0 3px var(--color-lilac-soft); }
 .form-note { font-size: 0.8rem; color: var(--color-ink-soft); margin-top: 8px; }
+.form-note a { color: inherit; text-decoration: underline; }
+.shop-map { position: relative; width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; }
+.shop-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 /* ---------- footer ---------- */
 .site-footer { position: relative; background: var(--color-beige); color: var(--color-ink); padding: 60px 0 30px; }
