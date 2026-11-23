@@ -168,15 +168,13 @@ h1, h2, h3, h4 { font-family: var(--font-jp); font-weight: 700; color: var(--col
 .identity-section { background: var(--color-lilac); }
 .identity-section .eyebrow, .identity-section .section-title { color: var(--color-indigo); }
 .identity-section .section-lead { color: #4a3f36; }
-.color-swatches { display: flex; gap: 22px; margin-top: 34px; flex-wrap: wrap; justify-content: center; position: relative; z-index: 1; }
-.swatch { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 148px; text-align: center; }
-.swatch-dot { width: 56px; height: 56px; border-radius: 50%; box-shadow: var(--shadow-card); }
-.swatch-dot.cream { background: var(--color-cream); border: 1px solid rgba(36,28,23,0.15); }
-.swatch-dot.beige { background: var(--color-beige); }
-.swatch-dot.coffee { background: var(--color-indigo); }
-.swatch-dot.brass { background: var(--color-silver); }
-.swatch-name { font-family: var(--font-jp); font-weight: 700; font-size: 0.9rem; color: var(--color-indigo); }
-.swatch-desc { font-size: 0.76rem; color: #4a3f36; }
+.motif-list { display: flex; gap: 28px; margin-top: 34px; flex-wrap: wrap; justify-content: center; position: relative; z-index: 1; }
+.motif { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 168px; text-align: center; }
+.motif-thumb { display: block; width: 112px; height: 112px; border-radius: 50%; overflow: hidden; box-shadow: var(--shadow-card); border: 3px solid var(--color-cream); }
+.motif-thumb img { width: 100%; height: 100%; object-fit: cover; transform: scale(var(--z, 1)); transform-origin: var(--o, 50% 50%); }
+.motif-name { font-family: var(--font-jp); font-weight: 700; font-size: 0.9rem; color: var(--color-indigo); }
+.motif-desc { font-size: 0.76rem; color: #4a3f36; }
+@media (max-width: 720px) { .motif-list { gap: 20px 12px; } .motif { width: calc(50% - 6px); } .motif-thumb { width: 96px; height: 96px; } }
 .identity-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; position: relative; z-index: 1; margin-top: 56px; }
 @media (max-width: 720px) { .identity-strip { grid-template-columns: 1fr; } }
 
@@ -381,26 +379,26 @@ a.menu-item-main::after { content: "詳しく見る →"; display: inline-block;
 }
 .card-grid.is-visible .card,
 .identity-strip.is-visible .photo-frame,
-.color-swatches.is-visible .swatch,
+.motif-list.is-visible .motif,
 .product-showcase.is-visible .showcase-card {
   animation: card-pop 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both;
 }
 .card-grid.is-visible .card:nth-child(2),
 .identity-strip.is-visible .photo-frame:nth-child(2),
-.color-swatches.is-visible .swatch:nth-child(2),
+.motif-list.is-visible .motif:nth-child(2),
 .product-showcase.is-visible .showcase-card:nth-child(2) { animation-delay: 0.08s; }
 .card-grid.is-visible .card:nth-child(3),
 .identity-strip.is-visible .photo-frame:nth-child(3),
-.color-swatches.is-visible .swatch:nth-child(3),
+.motif-list.is-visible .motif:nth-child(3),
 .product-showcase.is-visible .showcase-card:nth-child(3) { animation-delay: 0.16s; }
 .card-grid.is-visible .card:nth-child(4),
-.color-swatches.is-visible .swatch:nth-child(4),
+.motif-list.is-visible .motif:nth-child(4),
 .product-showcase.is-visible .showcase-card:nth-child(4) { animation-delay: 0.24s; }
 
 @media (prefers-reduced-motion: reduce) {
   .card-grid.is-visible .card,
   .identity-strip.is-visible .photo-frame,
-  .color-swatches.is-visible .swatch,
+  .motif-list.is-visible .motif,
   .product-showcase.is-visible .showcase-card { animation: none; }
 }
 
